@@ -1,0 +1,111 @@
+header{
+    height: 50px;
+}
+
+header a{
+    max-width: 70px;
+    height: 50px;
+}
+
+.banner{
+    margin-top: 50px;
+}
+
+.mobile-close{
+    display: block !important;
+}
+
+header .fa-bars{
+    display: block;
+}
+
+nav.menu{
+    margin: 0;
+    position: fixed;
+    top: 0px;
+    bottom: 0;
+    right: 0;
+    color: white;
+    transition: .6s;
+    overflow: hidden;
+    width: 0%;
+}
+
+nav.menu.menu-ativo{
+    width: 100%;
+}
+
+nav.menu ul{
+    display: flex;
+    list-style: none;
+    background-color: black;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh 
+}
+
+nav.menu ul li{
+    display: block;
+    line-height: 40px;
+    height: 40px;
+    padding: 0 30px;
+    cursor: pointer;
+    width: 100%;
+    
+}
+
+nav.menu ul li:hover{
+    background-color: brown
+}
+
+.app{
+    flex-direction: column;
+}
+.app div a{
+    display: none;
+    
+}
+
+.app div h1{
+    font-size: 29px;
+    
+}
+
+.app div p{
+    margin: 30px 0
+}
+
+.app div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 60%;
+    height: 100%;
+}
+.app img{
+    align-self: center
+}
+
+.app div{
+    width: 100%;
+}
+
+.app img + a{
+    display: block;
+}
+
+footer{
+    flex-direction: column;
+    height: 70px;
+    justify-content: space-around
+}
+
+footer div{
+    
+    
+    margin: 0
+}
+
+footer p{
+    margin: 0
+}

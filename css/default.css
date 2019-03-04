@@ -1,0 +1,471 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+header{
+    background-color: black;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    
+}
+
+.mobile-close{
+    display: none !important;
+    color: azure;
+    font-size: 40px;
+    font-weight: bold;
+    
+    text-align: end;
+    width: 90%;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+header .fa-bars{
+    display: none;
+    color: white;
+    font-size: 30px;
+    margin-right: 20px ;
+}
+
+header a{
+    display: flex;
+    align-items: center;
+    max-width: 140px;
+    height: 80px;
+    
+    margin-left: 10px; 
+}
+
+header a img{
+    align-self: center;
+    width: 100%;
+}
+
+nav.menu{
+    margin-right: 10px;
+}
+
+nav.menu ul{
+    display: flex;
+    list-style: none;
+    background-color: red;
+}
+
+nav.menu ul li{
+    display: block;
+    line-height: 80px;
+    height: 80px;
+    padding: 0 30px;
+    cursor: pointer;
+    
+}
+
+nav.menu ul li:hover{
+    background-color: brown
+}
+
+.banner{
+    margin-top: 80px;
+    display: flex;
+    background-image: url('../imagens/pessoa-academia.png');
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner div{
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    height: 200px;
+    justify-content: space-around;
+    color: aliceblue;
+    text-align: center;
+}
+
+.banner div h1{
+    font-size: 30px;
+    text-shadow: 10px black
+}
+
+.banner div p{
+    
+}
+
+.cta{
+    background-color: brown;
+    width: 200px;
+    padding: 15px;
+    border-radius: 100% / 1000px;
+    text-decoration: none;
+    color: white;
+    margin: 0 auto
+}
+
+.cta-ok{
+    background-color: brown;
+    width: 150px;
+    padding: 13px;
+    border-radius: 100% / 1000px;
+    text-decoration: none;
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+    align-self: center
+}
+
+
+.planos{
+    background-color: rgb(32, 32, 32);
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.planos h1{
+    text-align: center;
+    margin: 10px 0;
+    color: white;
+}
+
+.planos .item-plano{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    width: 291px;
+    height: 360px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 3px;
+    margin: 10px 0
+}
+
+.planos .item-plano img{
+    z-index: 1;
+    width:80px;
+    margin: 0 auto;
+}
+
+.planos h1 + div{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+    flex-wrap: wrap
+}
+
+
+.planos .item-plano div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+
+.planos .item-plano div:nth-child(1) hr{
+    border: 0;
+    height: 1px;
+    background-color: rgb(181, 187, 187);
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+    bottom: 20px
+}
+
+
+.planos .item-plano div:nth-child(1) h3{
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.planos .item-plano div:nth-child(1) p{
+    font-size: 14px;
+    margin-bottom: 10px
+}
+
+
+
+.planos .item-plano div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+    border-bottom: 1px solid black;
+    width: 80%;
+    
+    height: 50px;
+}
+
+
+.planos .item-plano div:nth-child(2) p{
+    font-size: 15px;
+}
+
+.planos .item-plano div:nth-child(3){
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    
+    
+}
+
+
+
+
+
+.planos .item-plano div:nth-child(3) a{
+    background-color: brown;
+    width: 130px;
+    padding: 13px;
+    border-radius: 100% / 1000px;
+    text-decoration: none;
+    color: white;
+    margin: 0 auto;
+    font-size: 14px;
+    margin-top: 30px;
+    text-align: center
+}
+
+.alunos {
+    background-color: rgb(32, 32, 32);
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.alunos h1{
+    text-align: center;
+    margin: 10px 0;
+    color: white;
+}
+.alunos h1 + div{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+    flex-wrap: wrap
+}
+
+
+.aluno-item{
+    color: azure;
+    display: flex;
+    flex-direction: column;align-items: center;    
+    width: 300px;
+    margin: 10px 0;
+}
+
+.aluno-item img{
+    width: 200px;
+    border-radius: 50%
+}
+
+.aluno-item h4{
+    margin-top: 20px
+}
+
+.aluno-item p{
+    margin: 10px auto;
+    width: 80%;
+    text-align: justify
+}
+
+.funcionarios {
+    background-color: rgb(32, 32, 32);
+    display: flex;
+    flex-direction: column;
+}
+
+.funcionarios h1{
+    text-align: center;
+    margin: 10px 0;
+    color: white;
+}
+
+.funcionarios h1 + div{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+    flex-wrap: wrap
+}
+
+
+.funcionarios-item{
+    color: azure;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    width: 300px;
+    margin: 10px 0;
+}
+
+.funcionarios-item img{
+    width: 200px;
+    
+}
+
+.funcionarios-item h4{
+    margin-top: 20px
+}
+
+.funcionarios-item p{
+    margin: 10px auto;
+    width: 80%;
+    
+}
+
+.funcionarios-card {
+    background-color: transparent;
+    width: 290px;
+    height: 290px;
+    
+    perspective: 1000px;
+    padding: 10px
+}
+
+.card-dentro {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.funcionarios-card:hover .card-dentro {
+    transform: rotateY(180deg);
+}
+
+.card-frente, .card-atras {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.card-dentro {
+    background-color: #bbb;
+    color: black;
+}
+
+.card-dentro img{
+    width: 100%
+}
+
+.card-dentro div{
+    overflow: hidden;
+}
+
+
+.card-atras {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.card-atras h4 {
+    margin: 50px;
+}
+
+.card-atras p{
+    display: block;
+    margin-top: 60px;
+    width: 90%;
+    margin: 0 auto
+}
+
+.exercicios .funcionarios-card {
+    background-color: transparent;
+    width: 190px;
+    height: 190px;
+    
+    perspective: 1000px;
+    padding: 10px
+}
+
+
+.exercicios .funcionarios-card h4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 0;
+}
+
+.exercicios .funcionarios-card img{
+    width: auto;
+    height: 200px;
+    
+}
+
+.app{
+    background-color: rgb(32, 32, 32);
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    padding: 60px 0;
+    height: 100%;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.app div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 60%;
+    height: 100%;
+    
+}
+
+.app div h1{
+    font-size: 40px
+}
+
+.app div p{
+    text-align: center;
+    width: 70%;
+    align-self: center
+    
+}
+.app img + a{
+    display: none;
+}
+
+footer{
+    background-color: rgb(2, 2, 2);
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+footer p{
+    margin-left: 30px
+}
+
+footer div{
+    margin-right: 30px;
+}
+
+footer div a{
+    margin-right: 20px;
+    color: white
+}
