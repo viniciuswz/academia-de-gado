@@ -54,10 +54,21 @@ nav.menu ul li{
     
 }
 
-nav.menu ul li:hover{
-    background-color: brown
+nav.menu ul li{
+    display: block;
+    line-height: 50px;
+    height: 50px;
+    padding: 0 30px;
+    cursor: pointer;
+    width: 100%;
 }
 
+.menu a{
+    white-space: nowrap;
+    display: flex;
+    max-width:100vw;
+    height: auto;
+}
 .app{
     flex-direction: column;
 }
@@ -108,4 +119,12 @@ footer div{
 
 footer p{
     margin: 0
+}
+
+.info{
+    margin-top: 50px;
+  
+    height:auto;
+   
+   
 }
