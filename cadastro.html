@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang=pt-br>
+<head>
+    
+    <title>Nossa nota</title>
+    <meta charset=UTF-8> <!-- ISO-8859-1 -->
+    <meta name=viewport content="width=device-width, initial-scale=1.0">
+    <meta name=description content="sistema de notas para professores">
+    <meta name=keywords content="notas"> <!-- Opcional -->
+    <meta name=author content='Daniel52x e Viniciuswz'>
+    
+    <!-- favicon, arquivo de imagem podendo ser 8x8 - 16x16 - 32x32px com extensão .ico -->
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    
+    <!-- CSS PADRÃO -->
+    <link href="css/default.css" rel=stylesheet>
+    
+    <!-- Telas Responsivas -->
+    <link rel=stylesheet media="screen and (max-width:480px)" href="css/style480.css">
+    <link rel=stylesheet media="screen and (min-width:481px) and (max-width:768px)" href="css/style768.css">
+    <link rel=stylesheet media="screen and (min-width:769px) and (max-width:1024px)" href="css/style1024.css">
+    <link rel=stylesheet media="screen and (min-width:1025px)" href="css/style1025.css">
+    <!-- JS-->
+    <script src="lib/_jquery/jquery.js"></script>
+    <script src="lib/_jquery/jquery.mask177.min.js"></script>
+    <script src="js/js.js"></script>
+    <script src="js/form.js"></script>
+    
+</head>
+<body>
+    
+    
+    <section class="container-login">
+        <div class="login">
+            
+            
+            
+            <form id='login'> 
+                <h1>Cadastro</h1>  
+                <div>
+                    <label for="nome">nome<span></span></label>
+                    <input type="text" id="nome" name="nome" placeholder="nome">
+                </div>
+                <div>
+                    <label for="email">e-mail<span></span></label>
+                    <input type="email" id="email" name="email" placeholder="e-mail">
+                </div>
+                <div>
+                    <label for="cpf">CPF<span></span></label>
+                    <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00">
+                </div>
+                <div>
+                    <label for="nasc">Data de nascimento<span></span></label>
+                    <input type="date" id="nasc" name="nascimento" min="1900-01-01" >
+                </div>
+                <div>
+                    <label for="senha">Senha<span></span></label>
+                    <input type="password" id="senha" name="senha" placeholder="*********">
+                </div>
+                <div>
+                    <label for="Csenha">Confirmar a senha<span></span></label>
+                    <input type="password" id="Csenha" name="Csenha" placeholder="*********">
+                </div>
+                <input type="submit" value="Login">
+                
+            </form>
+        </div>
+    </section>
+    
+    
+</body>
+</html>

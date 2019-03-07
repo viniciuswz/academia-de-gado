@@ -42,7 +42,6 @@ header a{
     align-items: center;
     max-width: 140px;
     height: 80px;
-    
     margin-left: 10px; 
 }
 
@@ -67,7 +66,6 @@ nav.menu ul li{
     height: 80px;
     padding: 0 30px;
     cursor: pointer;
-    
 }
 
 nav.menu ul li:hover{
@@ -468,4 +466,112 @@ footer div{
 footer div a{
     margin-right: 20px;
     color: white
+}
+
+
+.container-login{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    background-color: #000000;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container-login .login{
+    display: flex;
+    flex-direction: colum;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(255, 255, 255,.8);
+    flex-wrap:wrap;
+    height: auto;
+    width: 300px;
+    padding:30px 0;
+    
+    border-radius: 10px;
+}
+
+#login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#login div:nth-child(5) label span{
+    display: block;
+    margin: 0
+}
+
+#login label[for=Csenha] span{
+    display: block;
+    margin: 0
+}
+.container-login .login h1{
+    width:100%;text-align:center
+}
+
+
+.container-login .login div{
+    margin: 10px 0;
+    
+    
+}
+
+.container-login .login div label{
+    display: block;
+    
+}
+
+.container-login .login div label span{
+    font-size:13px;
+    color:red;
+    font-weight:bold;
+    margin-left:5px
+}
+
+.container-login .login div input{
+    outline: none;
+    border:2px solid grey;
+    font-size: 16px;
+    padding:4px 10px;
+    
+    
+}
+
+.container-login .login div input.errado{
+    
+    border:2px solid rgb(247, 0, 0);
+    background-color: rgba(255, 0, 0,.03)
+    
+    
+}
+
+
+.container-login .login input[type=submit]{
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    padding: 10px 55px;
+    width: 100%;
+    background-color: #0093d7;
+    color: white;
+    font-weight: bold;
+    
+    margin: 0 auto
+}
+
+
+.container-login .login input[type=date]{
+    font-size: 1.2em;
+}
+
+.error-mensagem{
+    background-color: red;;
+    padding: 5px 0;
+    text-align: center;
+    color: white;
 }
