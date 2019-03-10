@@ -119,3 +119,23 @@ footer p{
    
    
 }
+
+aside{
+    flex-direction: column;
+    margin-top: 50px
+}
+
+
+.perfil{
+    width: 100%;
+    
+}
+.perfil + div{
+    margin-top: 180px;
+    width: 100%
+}
+.foto-perfil + div h2{
+
+width: 70%;
+margin: 0 auto
+}
